@@ -107,6 +107,22 @@ These modifications do not produce a very important effect. The extension of the
 
 ![plot](./images/recall_ref_00s.png)
 
+##### Side note for augmentation
+I was used the "augmentation notebook" to check the effect of different augmentation.
+Here are some images with the augmentations that I have retain.
+![plot](./images/augmented_00.png)
+
+![plot](./images/augmented_01.png)
+
+Here are some other images with the augmentations I don't have retain.
+![plot](./images/augmented_02.png)
+The rotation is too big in our context but you can not tune the rotation angle.
+
+![plot](./images/augmented_03.png)
+This patch is also unrealistic in our context. It looks more like a camera deffect. If you want to use patch, I think that it is better to use black patch.
+
+![plot](./images/augmented_04.png)
+I have retain augmentations playing with colors but the modification are here a bit unrealistic for a natural environment.
 
 #### Improvement 2 (var_02)
 I replaced the random_crop_image augmentation with random_crop_to_aspect_ratio to keep the proportions of the objects.
